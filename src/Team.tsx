@@ -38,7 +38,7 @@ function Team() {
                 <div className="space-x-4 mt-4 pb-8">
                   <button
                     type="button"
-                    className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-blue-600"
+                    className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-green-600 hover:bg-green-700 active:bg-green-600"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -145,7 +145,7 @@ function Team() {
                 <div className="space-x-4 mt-4 pb-8">
                   <button
                     type="button"
-                    className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-blue-600"
+                    className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-green-600 hover:bg-green-700 active:bg-green-600"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

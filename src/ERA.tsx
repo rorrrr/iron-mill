@@ -18,7 +18,7 @@ function Era() {
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-3">
           <div className="border border-gray-900 rounded-3xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300">
             <h1 className="text-3xl font-semibold text-gray-900">
-              Entertainment 🍿
+              Entertainment
             </h1>
 
             <p className="mt-4 text-lg text-gray-400">
@@ -32,7 +32,7 @@ function Era() {
           </div>
 
           <div className="border border-gray-900 rounded-3xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300">
-            <h1 className=" text-3xl font-semibold text-gray-900">Real ✅</h1>
+            <h1 className=" text-3xl font-semibold text-gray-900">Real</h1>
 
             <p className="mt-4 text-lg text-gray-400">
               Authenticity is at the heart of Ironmill’s productions. We believe
@@ -45,9 +45,7 @@ function Era() {
           </div>
 
           <div className="border border-gray-900 rounded-3xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300">
-            <h1 className="text-3xl font-semibold text-gray-900">
-              Accessible 🌎
-            </h1>
+            <h1 className="text-3xl font-semibold text-gray-900">Accessible</h1>
 
             <p className="mt-4 text-lg text-gray-400">
               Accessibility is essential to our mission. Ironmill strives to

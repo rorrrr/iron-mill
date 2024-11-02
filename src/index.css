@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  font-family: "TT Interfaces", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+@font-face {
+  font-family: "Gildeon";
+  src: url("./assets/Gildeon.otf") format("opentype");
+}
 
-  /* color-scheme: dark; */
+:root {
   color: rgba(255, 255, 255, 0.87);
 
   font-synthesis: none;
@@ -26,9 +26,8 @@ a:hover {
 }
 
 body {
+  font-family: "Gildeon", sans-serif;
   margin: 0;
-  /* display: flex;
-  place-items: center; */
   min-width: 320px;
   min-height: 100vh;
 }
