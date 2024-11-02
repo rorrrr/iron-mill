@@ -1,7 +1,7 @@
 import highResAmy from "./assets/highresamy.png";
 import highResSteven from "./assets/stevenhighres.png";
-import blobShape from "./assets/blob.svg";
-import blobShape1 from "./assets/blob1.svg";
+import blobShape from "./assets/greenblob.svg";
+import blobShape1 from "./assets/greenblob1.svg";
 
 function Team() {
   return (
@@ -38,7 +38,7 @@ function Team() {
                 <div className="space-x-4 mt-4 pb-8">
                   <button
                     type="button"
-                    className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-green-600 hover:bg-green-700 active:bg-green-600"
+                    className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-green-600"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -108,7 +108,7 @@ function Team() {
             <div className="grid items-center grid-cols-1 md:grid-cols-2">
               <div className="relative pt-5 hidden md:block">
                 <img
-                  className="absolute inset-x-0 bottom-0 -mb-30"
+                  className="absolute inset-x-0 bottom-15"
                   src={blobShape1}
                   alt=""
                 />
@@ -145,7 +145,7 @@ function Team() {
                 <div className="space-x-4 mt-4 pb-8">
                   <button
                     type="button"
-                    className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-green-600 hover:bg-green-700 active:bg-green-600"
+                    className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-blue-600"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -195,7 +195,7 @@ function Team() {
               </div>
               <div className="relative pt-5 block md:hidden">
                 <img
-                  className="absolute inset-x-0 bottom-0 mb-32"
+                  className="absolute inset-x-0 bottom-15"
                   src={blobShape1}
                   alt=""
                 />

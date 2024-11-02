@@ -39,9 +39,6 @@ module.exports = {
           "slidein-rotate 2s  ease forwards var(--slidein-delay, 0ms)",
       },
     },
-    fontFamily: {
-      sans: ["Gildeon", "sans-serif"],
-    },
   },
   plugins: [],
 };

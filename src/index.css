@@ -6,6 +6,14 @@
   font-family: "Gildeon";
   src: url("./assets/Gildeon.otf") format("opentype");
 }
+@font-face {
+  font-family: "Ramadan";
+  src: url("./assets/ramadam.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Chopper";
+  src: url("./assets/chopper.ttf") format("truetype");
+}
 
 :root {
   color: rgba(255, 255, 255, 0.87);
