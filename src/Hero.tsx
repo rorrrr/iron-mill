@@ -13,16 +13,29 @@ function Hero() {
           loop
         />
       </div>
-      <div className="video-content space-y-4 z-10">
+
+      <div className="video-content z-10">
         <img
           src={ironMillLogo}
-          className="mx-auto w-full px-12 h-auto  max-w-[700px]"
+          className="mx-auto w-full mb-4 px-12 h-auto  max-w-[700px]"
           alt="ironmill logo"
         />
         {/* <h1 className="text-7xl lg:text-9xl font-light">IRONMILL</h1> */}
         <h1 className="text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-light">
           MEDIA PRODUCTIONS
         </h1>
+
+        <button
+          className="mt-10 bg-black border border-white text-white px-4 py-2 rounded-md"
+          onClick={() =>
+            window.scrollTo({
+              top: document.documentElement.scrollHeight,
+              behavior: "smooth",
+            })
+          }
+        >
+          Contact us
+        </button>
       </div>
     </section>
   );

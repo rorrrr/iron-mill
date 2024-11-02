@@ -7,7 +7,7 @@ function Mission() {
   return (
     <section className="relative py-4 bg-gray-900 text-white">
       <div className="w-full max-w-7xl px-5 mx-auto pb-5">
-        <div className="w-full justify-start items-center gap-12 grid lg:grid-cols-2 grid-cols-1">
+        <div className="w-full justify-start items-center gap-12 grid lg:grid-cols-2 grid-cols-1 pt-4">
           <div className="w-full justify-center items-start gap-6 grid sm:grid-cols-2 grid-cols-2 lg:order-first order-last">
             <div className="lg:pt-24 lg:justify-center sm:justify-end justify-start items-start gap-2.5 flex">
               <img
@@ -25,7 +25,7 @@ function Mission() {
           <div className="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex">
             <div className="w-full flex-col justify-center items-start gap-8 flex">
               <div className="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
-                <h2 className="text-4xl font-bold lg:text-start text-center">
+                <h2 className="text-4xl font-bold lg:text-start text-center pt-4">
                   Forging great content
                 </h2>
                 <p className=" text-base font-normal leading-relaxed lg:text-start text-center text-gray-400">

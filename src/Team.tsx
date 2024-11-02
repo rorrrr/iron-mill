@@ -195,7 +195,7 @@ function Team() {
               </div>
               <div className="relative pt-5 block md:hidden">
                 <img
-                  className="absolute inset-x-0 bottom-0 -mb-30"
+                  className="absolute inset-x-0 bottom-0 mb-32"
                   src={blobShape1}
                   alt=""
                 />
