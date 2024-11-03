@@ -30,7 +30,7 @@ function Era() {
           with world-class, boundary-breaking media.
         </p>
         <div className="container px-6 mx-auto">
-          <div className="grid grid-cols-1 gap-10 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
             <Card
               title="ENTERTAINMENT"
               blurb="Ironmill’s commitment to entertainment means creating experiences that resonate. From high-energy sports broadcasts to immersive documentaries and thought-provoking podcasts, our content is crafted to captivate and inspire. We bring stories to life with a fresh approach, embracing innovation and creativity to keep audiences engaged across platforms."

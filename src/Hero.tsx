@@ -33,7 +33,7 @@ function Hero() {
   }, []);
 
   const fadeInStyle =
-    "animate-slideindownfast text-white mt-1 sm:mt-3 opacity-0 overline overline-offset-8 decoration-saudi-green ";
+    "animate-slideindownfast text-white mt-1 opacity-0 px-4 border-t-4 border-saudi-green w-fit mx-auto";
 
   const media = <p className={fadeInStyle}>MEDIA</p>;
 
