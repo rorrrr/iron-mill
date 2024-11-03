@@ -62,21 +62,21 @@ function Nav() {
             >
               <Link
                 to="/who-we-are"
-                className="block px-4 py-2 text-lg text-gray-700 hover:text-saudi-green hover:underline hover:decoration-saudi-green"
+                className="block px-4 py-2 text-lg text-left text-gray-700 hover:text-saudi-green hover:underline hover:decoration-saudi-green"
                 onClick={() => setIsOpen(false)}
               >
                 WHO WE ARE
               </Link>
               <Link
                 to="/what-we-do"
-                className="block px-4 py-2 text-lg text-gray-700 hover:text-saudi-green hover:underline hover:decoration-saudi-green"
+                className="block px-4 py-2 text-lg text-left text-gray-700 hover:text-saudi-green hover:underline hover:decoration-saudi-green"
                 onClick={() => setIsOpen(false)}
               >
                 WHAT WE DO
               </Link>
               <Link
                 to="/contact-us"
-                className="block px-4 py-2 text-lg text-gray-700 hover:text-saudi-green hover:underline hover:decoration-saudi-green"
+                className="block px-4 py-2 text-lg text-left text-gray-700 hover:text-saudi-green hover:underline hover:decoration-saudi-green"
                 onClick={() => setIsOpen(false)}
               >
                 HOW TO REACH US

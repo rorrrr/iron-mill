@@ -2,8 +2,21 @@ import video from "./assets/dubai-skyline.mp4";
 import ironMillLogo from "./assets/ironmilllogowhite-cut.png";
 import windMillCrop from "./assets/windmillcrop.png";
 import thumb from "./assets/thumb.jpg";
+import { useEffect } from "react";
+import highresamy from "./assets/highresamy.png";
+import stevehighres from "./assets/stevenhighres.png";
+import skyline from "./assets/skyline.webp";
 
 function Hero() {
+  useEffect(() => {
+    const preloadImages = [highresamy, stevehighres, skyline];
+    preloadImages.forEach((image) => {
+      const img = new Image();
+      img.src = image;
+      img.loading = "lazy";
+    });
+  }, []);
+
   return (
     <section className="relative w-full h-screen flex flex-col items-center justify-center text-center text-white">
       <div className="video-docker absolute top-0 left-0 w-full h-full overflow-hidden after:content-[''] after:absolute after:w-full after:h-full after:top-0 after:left-0 after:bg-black/60 after:z-[1]">
@@ -31,7 +44,6 @@ function Hero() {
           />
         </div>
 
-        {/* <h1 className="text-7xl lg:text-9xl font-light">IRONMILL</h1> */}
         <h1 className="animate-slidein opacity-0 [--slidein-delay:500ms] text-3xl md:text-3xl font-light">
           MEDIA PRODUCTIONS
         </h1>
