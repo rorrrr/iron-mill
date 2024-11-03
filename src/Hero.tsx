@@ -33,7 +33,7 @@ function Hero() {
   }, []);
 
   const fadeInStyle =
-    "animate-slideindownfast text-white mt-3 opacity-0 overline overline-offset-8 decoration-saudi-green ";
+    "animate-slideindownfast text-white mt-1 sm:mt-3 opacity-0 overline overline-offset-8 decoration-saudi-green ";
 
   const media = <p className={fadeInStyle}>MEDIA</p>;
 
@@ -62,23 +62,23 @@ function Hero() {
         <div className="relative mx-auto">
           <img
             src={ironMillLogo}
-            className="animate-slidein w-[500px] opacity-0 [--slidein-delay:300ms] mx-auto mb-4 px-12 h-auto"
+            className="animate-slidein w-[320px] sm:w-[500px] opacity-0 [--slidein-delay:300ms] mx-auto mb-4 h-auto"
             alt="ironmill logo"
           />
           <img
             src={windMillCrop}
-            className="h-[45px] w-[45px] animate-slidein-rotate opacity-0 [--slidein-delay:300ms] absolute top-[5px] left-[313.7px]"
+            className="h-[43px] w-[43px] sm:h-[55px] sm:w-[55px] animate-slidein-rotate opacity-0 [--slidein-delay:300ms] absolute top-[2px] sm:top-[8px] left-[207px] sm:left-[329px]"
             alt="windmill crop"
           />
         </div>
 
         {/* <div className="animate-slidein opacity-0 [--slidein-delay:300ms] flex justify-center w-[300px] border-2 border-black mx-auto mb-1"></div> */}
 
-        <h1 className="animate-slidein opacity-0 [--slidein-delay:300ms] text-3xl md:text-3xl font-light mb-1">
+        <h1 className="animate-slidein opacity-0 [--slidein-delay:300ms] text-4xl sm:text-5xl font-light">
           MEDIA PRODUCTIONS
         </h1>
 
-        <h1 className="animate-slidein opacity-0 mt-16  [--slidein-delay:1500ms] text-5xl font-light">
+        <h1 className="animate-slidein opacity-0 mt-16  [--slidein-delay:1500ms] text-4xl sm:text-5xl font-light">
           INNOVATING
           <br /> {showMedia && media}
           {showSports && sports}
