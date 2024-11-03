@@ -2,12 +2,28 @@ import video from "./assets/dubai-skyline.mp4";
 import ironMillLogo from "./assets/ironmilllogowhite-cut.png";
 import windMillCrop from "./assets/windmillcrop.png";
 import thumb from "./assets/thumb.jpg";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import highresamy from "./assets/highresamy.png";
 import stevehighres from "./assets/stevenhighres.png";
 import skyline from "./assets/skyline.webp";
 
 function Hero() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((current) => (current + 1) % 5);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const showMedia = activeIndex === 0;
+  const showEntertainment = activeIndex === 1;
+  const showRadio = activeIndex === 2;
+  const showSports = activeIndex === 3;
+  const showPodcasts = activeIndex === 4;
+
   useEffect(() => {
     const preloadImages = [highresamy, stevehighres, skyline];
     preloadImages.forEach((image) => {
@@ -16,6 +32,19 @@ function Hero() {
       img.loading = "lazy";
     });
   }, []);
+
+  const fadeInStyle =
+    "animate-slideindownfast text-white mt-3 opacity-0 overline overline-offset-8 decoration-saudi-green ";
+
+  const media = <p className={fadeInStyle}>MEDIA</p>;
+
+  const entertainment = <p className={fadeInStyle}>ENTERTAINMENT</p>;
+
+  const radio = <p className={fadeInStyle}>RADIO</p>;
+
+  const sports = <p className={fadeInStyle}>SPORTS</p>;
+
+  const podcasts = <p className={fadeInStyle}>PODCASTS</p>;
 
   return (
     <section className="relative w-full h-screen flex flex-col items-center justify-center text-center text-white">
@@ -44,8 +73,19 @@ function Hero() {
           />
         </div>
 
-        <h1 className="animate-slidein opacity-0 [--slidein-delay:500ms] text-3xl md:text-3xl font-light">
+        {/* <div className="animate-slidein opacity-0 [--slidein-delay:300ms] flex justify-center w-[300px] border-2 border-black mx-auto mb-1"></div> */}
+
+        <h1 className="animate-slidein opacity-0 [--slidein-delay:300ms] text-3xl md:text-3xl font-light mb-1">
           MEDIA PRODUCTIONS
+        </h1>
+
+        <h1 className="animate-slidein opacity-0 mt-16  [--slidein-delay:1500ms] text-5xl font-light">
+          INNOVATING
+          <br /> {showMedia && media}
+          {showSports && sports}
+          {showEntertainment && entertainment}
+          {showRadio && radio}
+          {showPodcasts && podcasts}
         </h1>
       </div>
     </section>

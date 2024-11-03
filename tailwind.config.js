@@ -52,14 +52,25 @@ module.exports = {
             transform: "translateY(0)",
           },
         },
+        "slidein-downfast": {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(-20px)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
       },
       animation: {
         slidein: "slidein 1s ease var(--slidein-delay, 0) forwards",
         "slidein-rotate":
           "slidein-rotate 2s  ease forwards var(--slidein-delay, 0ms)",
         "slidein-left":
-          "slidein-left 0.8s ease forwards var(--slidein-delay, 0ms)",
+          "slidein-left 0.5s ease forwards var(--slidein-delay, 0ms)",
         "slidein-up": "slidein-up 1s ease forwards var(--slidein-delay, 0ms)",
+        slideindownfast: "slidein-downfast 0.8s ease forwards",
       },
     },
   },
