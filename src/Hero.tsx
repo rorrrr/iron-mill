@@ -29,7 +29,6 @@ function Hero() {
     preloadImages.forEach((image) => {
       const img = new Image();
       img.src = image;
-      img.loading = "lazy";
     });
   }, []);
 
