@@ -1,6 +1,8 @@
 import video from "./assets/dubai-skyline.mp4";
 import ironMillLogo from "./assets/ironmilllogowhite-cut.png";
 import windMillCrop from "./assets/windmillcrop.png";
+import thumb from "./assets/thumb.jpg";
+
 function Hero() {
   return (
     <section className="relative w-full h-screen flex flex-col items-center justify-center text-center text-white">
@@ -11,6 +13,7 @@ function Hero() {
           autoPlay
           muted
           loop
+          poster={thumb}
         />
       </div>
 

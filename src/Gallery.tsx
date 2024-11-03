@@ -17,7 +17,7 @@ function Gallery() {
       <h2 className="text-white text-4xl font-bold text-center py-5">
         Our experience
       </h2>
-      <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
+      <div className="container mx-auto px-6 py-2 lg:pt-12">
         <div className="-m-1 flex flex-wrap md:-m-2">
           <div className="flex w-1/3 flex-wrap">
             <div className="w-full p-1 md:p-2">
@@ -115,13 +115,13 @@ function Gallery() {
 
       {selectedImage && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
+          className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-30"
           onClick={() => setSelectedImage(null)}
         >
           <img
             src={selectedImage}
             alt="fullscreen"
-            className="max-h-[90vh] max-w-[90vw] object-contain"
+            className="max-h-[80vh] max-w-[80vw] object-contain"
             onClick={(e) => e.stopPropagation()}
           />
         </div>

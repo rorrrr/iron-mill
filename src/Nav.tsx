@@ -1,13 +1,27 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useLocation, Link } from "react-router-dom";
-import ironMillLogoWhite from "./assets/ironmilllogo.png";
+import ironMillLogoWhite from "./assets/ironmilllogowhite.png";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const { pathname } = useLocation();
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="fixed top-0 z-10 w-full bg-transparent text-white">
+    <nav
+      className={`fixed top-0 z-50 w-full text-white transition-colors duration-300 ${
+        isScrolled ? "bg-black" : "bg-transparent"
+      }`}
+    >
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Left side - Logo */}
@@ -16,7 +30,7 @@ function Nav() {
               <img
                 src={ironMillLogoWhite}
                 alt="logo"
-                className="w-auto ml-4 h-7 pt-1 transition-transform duration-200 hover:scale-110 cursor-pointer"
+                className="w-auto ml-4 h-[40px] pt-1 transition-transform duration-200 hover:scale-110 cursor-pointer"
                 onClick={() => (window.location.href = "/")}
               />
             )}

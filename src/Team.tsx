@@ -2,29 +2,33 @@ import highResAmy from "./assets/highresamy.png";
 import highResSteven from "./assets/stevenhighres.png";
 import blobShape from "./assets/greenblob.svg";
 import blobShape1 from "./assets/greenblob1.svg";
+import Logos from "./Logos";
+import Inlet from "./Inlet";
+import downtown from "./assets/skyline.webp";
 
 function Team() {
   return (
     <div className="relative mx-auto rounded-t-3xl">
+      <Inlet firstLine="OUR" secondLine="TEAM" image={downtown} />
       <div className="h-100">
-        <section className="pt-10 overflow-hidden bg-gray-50 md:pt-0 sm:pt-16 2xl:pt-16 mb-0.5">
+        <section className="overflow-hidden mb-0.5">
           <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
             <div className="grid items-center grid-cols-1 md:grid-cols-2">
               <div>
                 <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl pt-5">
-                  Amy Irons
+                  AMY IRONS
                 </h2>
                 <h3 className="text-xl mt-2 font-bold leading-tight text-black sm:text-2xl lg:text-3xl">
-                  Founder
+                  FOUNDER
                 </h3>
-                <p className="mt-3 pb-2 text-xl leading-relaxed text-gray-600 md:mt-8">
+                <p className="mt-3 pb-2 text-xl text-start leading-relaxed text-gray-400 md:mt-8">
                   An award-winning Scottish TV and radio host and podcaster,
                   celebrated for her impactful career and dynamic presence in
                   live TV and event coverage. With her exceptional storytelling
                   and professionalism, Amy has become a leading voice across top
                   platforms, including the BBC and Capital FM.
                 </p>
-                <p className="mt-3 pb-2 text-xl leading-relaxed text-gray-600 md:mt-8">
+                <p className="mt-3 pb-2 text-xl text-start leading-relaxed text-gray-400 md:mt-8">
                   Known for her authenticity and resilience, she is a powerful
                   female role model in media, inspiring young women to pursue
                   careers in broadcasting. Beyond her work in radio and
@@ -121,12 +125,12 @@ function Team() {
               </div>
               <div className="pt-10">
                 <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
-                  Steven Mill
+                  STEVEN MILL
                 </h2>
                 <h3 className="text-xl mt-2 font-bold leading-tight text-black sm:text-2xl lg:text-3xl">
-                  Founder
+                  FOUNDER
                 </h3>
-                <p className="mt-3 pb-2 text-xl leading-relaxed text-gray-600 md:mt-8">
+                <p className="mt-3 pb-2 text-xl text-start leading-relaxed text-gray-400 md:mt-8">
                   An award-winning Scottish radio presenter and podcaster,
                   widely recognized for his world-class ideas and
                   record-breaking shows on Capital FM, Radio Clyde, and Radio
@@ -134,7 +138,7 @@ function Team() {
                   thinkers, Steven has revolutionized listener engagement,
                   consistently setting new standards in broadcasting.
                 </p>
-                <p className="mt-3 pb-2 text-xl leading-relaxed text-gray-600 md:mt-8">
+                <p className="mt-3 pb-2 text-xl text-start leading-relaxed text-gray-400 md:mt-8">
                   His innovative approach and dynamic style have attracted
                   collaborations with prestigious brands such as the BBC and
                   M&S, solidifying his influence beyond radio. A true industry
@@ -210,6 +214,7 @@ function Team() {
           </div>
         </section>
       </div>
+      <Logos />
     </div>
   );
 }
