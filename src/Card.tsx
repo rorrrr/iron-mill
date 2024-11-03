@@ -2,7 +2,7 @@ function Card({
   title,
   blurb,
   image,
-  align,
+  align = "top",
 }: {
   title: string;
   blurb: string;
