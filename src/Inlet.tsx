@@ -18,9 +18,9 @@ function Inlet({
           />
         </section>
       </div>
-      <div className="md:max-w-5xl md:mx-auto text-6xl z-40 relative -mt-[45px] md:pl-6 text-left ml-2 text-white animate-slidein-left opacity-0">
-        <h1 className="p-0 leading-[0.75]">{firstLine}</h1>
-        <h1 className="p-0 leading-[0.75] text-black">{secondLine}</h1>
+      <div className="md:max-w-5xl md:mx-auto text-5xl z-40 relative -mt-[40px] md:pl-6 text-left ml-2 text-white animate-slidein-left opacity-0">
+        <h1 className="p-0 leading-[0.85]">{firstLine}</h1>
+        <h1 className="p-0 leading-[0.85] text-black">{secondLine}</h1>
       </div>
     </>
   );
