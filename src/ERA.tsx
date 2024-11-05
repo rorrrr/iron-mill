@@ -14,9 +14,9 @@ function Era() {
       <Inlet firstLine="OUR" secondLine="MISSION" image={downtown} />
       <Mission />
       <div
-        className={`max-w-[1024px] relative mx-auto rounded-t-3xl bg-gray-50 pb-20 select-none`}
+        className={`max-w-[1024px] relative mx-auto bg-gray-50 pb-20 select-none`}
       >
-        <h2 className="px-6 text-gray-800 pt-5 text-4xl font-bold text-left ">
+        <h2 className="px-6 text-gray-800 pt-5 text-3xl font-bold text-left ">
           A NEW ERA IN MEDIA
         </h2>
 

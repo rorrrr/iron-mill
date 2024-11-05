@@ -1,6 +1,5 @@
 import video from "./assets/dubai-skyline.mp4";
-import ironMillLogo from "./assets/ironmilllogowhite-cut.png";
-import windMillCrop from "./assets/windmillcrop.png";
+import ironMillLogo from "./assets/logo2.png";
 import thumb from "./assets/thumb.jpg";
 import { useEffect, useState } from "react";
 import highresamy from "./assets/highresamy.png";
@@ -33,7 +32,7 @@ function Hero() {
   }, []);
 
   const fadeInStyle =
-    "animate-slideindownfast text-white mt-1 opacity-0 px-4 border-t-4 border-saudi-green w-fit mx-auto";
+    "animate-slideindownfast text-white mt-1 opacity-0 pt-2 px-4 border-t-4 border-saudi-green w-fit mx-auto";
 
   const media = <p className={fadeInStyle}>MEDIA</p>;
 
@@ -65,20 +64,9 @@ function Hero() {
             className="animate-slidein w-[320px] sm:w-[500px] opacity-0 [--slidein-delay:300ms] mx-auto mb-4 h-auto"
             alt="ironmill logo"
           />
-          <img
-            src={windMillCrop}
-            className="h-[43px] w-[43px] sm:h-[55px] sm:w-[55px] animate-slidein-rotate opacity-0 [--slidein-delay:300ms] absolute top-[2px] sm:top-[8px] left-[207px] sm:left-[329px]"
-            alt="windmill crop"
-          />
         </div>
 
-        {/* <div className="animate-slidein opacity-0 [--slidein-delay:300ms] flex justify-center w-[300px] border-2 border-black mx-auto mb-1"></div> */}
-
-        <h1 className="animate-slidein opacity-0 [--slidein-delay:300ms] text-4xl sm:text-5xl font-light">
-          MEDIA PRODUCTIONS
-        </h1>
-
-        <h1 className="animate-slidein opacity-0 mt-16  [--slidein-delay:1500ms] text-4xl sm:text-5xl font-light">
+        <h1 className="animate-slidein opacity-0 mt-16  [--slidein-delay:1500ms] text-3xl sm:text-4xl font-light">
           INNOVATING
           <br /> {showMedia && media}
           {showSports && sports}

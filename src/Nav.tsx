@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useLocation, Link } from "react-router-dom";
-import ironMillLogoWhite from "./assets/ironmilllogowhite.png";
+import ironMillLogoWhite from "./assets/logo3.png";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);

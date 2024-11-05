@@ -75,4 +75,5 @@ module.exports = {
     },
   },
   plugins: [],
+  safelist: ["object-top", "object-center", "object-bottom"],
 };

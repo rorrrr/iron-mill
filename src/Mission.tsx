@@ -25,7 +25,7 @@ function Mission() {
               <div
                 className={`w-full flex-col justify-start lg:items-start items-center gap-3 flex `}
               >
-                <h2 className="text-4xl font-bold lg:text-start text-center text-black">
+                <h2 className="text-3xl font-bold lg:text-start text-center text-black">
                   FORGING GREAT CONTENT
                 </h2>
                 <p className=" text-lg font-normal  text-start  text-gray-400 font-sans">
@@ -37,10 +37,11 @@ function Mission() {
                 </p>
 
                 <p className=" text-lg font-normal  text-start  text-gray-400 font-sans">
-                  Guided by our ERA principles—Entertaining, Real,
-                  Accessible—we’re crafting a new era in broadcasting that
-                  reaches audiences worldwide through TV shows, documentaries,
-                  live broadcasts, podcasts, and radio.
+                  Guided by our ERA principles — <strong>Entertaining</strong>,{" "}
+                  <strong>Real</strong>, <strong>Accessible</strong> — we’re
+                  crafting a new era in broadcasting that reaches audiences
+                  worldwide through TV shows, documentaries, live broadcasts,
+                  podcasts, and radio.
                 </p>
               </div>
             </div>
