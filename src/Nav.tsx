@@ -16,6 +16,11 @@ function Nav() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleMenuToggle = () => {
+    setIsOpen(!isOpen);
+    window.scrollTo(0, 0);
+  };
+
   return (
     <nav
       className={`fixed top-0 z-50 w-full text-white transition-colors duration-300 ${
@@ -63,21 +68,21 @@ function Nav() {
               <Link
                 to="/who-we-are"
                 className="block px-4 py-2 text-lg text-left text-gray-700 hover:text-saudi-green hover:underline hover:decoration-saudi-green"
-                onClick={() => setIsOpen(false)}
+                onClick={handleMenuToggle}
               >
                 WHO WE ARE
               </Link>
               <Link
                 to="/what-we-do"
                 className="block px-4 py-2 text-lg text-left text-gray-700 hover:text-saudi-green hover:underline hover:decoration-saudi-green"
-                onClick={() => setIsOpen(false)}
+                onClick={handleMenuToggle}
               >
                 WHAT WE DO
               </Link>
               <Link
                 to="/contact-us"
                 className="block px-4 py-2 text-lg text-left text-gray-700 hover:text-saudi-green hover:underline hover:decoration-saudi-green"
-                onClick={() => setIsOpen(false)}
+                onClick={handleMenuToggle}
               >
                 HOW TO REACH US
               </Link>
