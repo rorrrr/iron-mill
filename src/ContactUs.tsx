@@ -9,7 +9,7 @@ function ContactUs() {
       <section className="relative w-full flex flex-col items-center justify-center text-center text-white">
         <section className="bg-white dark:bg-gray-900">
           <div className="container p-6 mx-auto">
-            <div className="grid sm:gap-12 mt-10 grid-cols-2">
+            <div className="grid sm:gap-12 mt-10 grid-cols-1 md:grid-cols-2 gap-10">
               <div className="flex flex-col items-center justify-center text-center">
                 <span className="p-3 text-green-800 rounded-full bg-green-100/80 dark:bg-gray-800">
                   <svg

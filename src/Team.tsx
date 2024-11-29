@@ -21,14 +21,14 @@ function Team() {
                 <h3 className="text-xl mt-2 font-bold leading-tight text-black sm:text-2xl lg:text-3xl">
                   FOUNDER
                 </h3>
-                <p className="mt-3 p-4 text-xl text-start leading-relaxed text-gray-400 md:mt-8 font-normal">
+                <p className="mt-3 p-4 text-xl text-start leading-relaxed text-gray-400 md:mt-8 font-sans">
                   An award-winning Scottish TV and radio host and podcaster,
                   celebrated for her impactful career and dynamic presence in
                   live TV and event coverage. With her exceptional storytelling
                   and professionalism, Amy has become a leading voice across top
                   platforms, including the BBC and Capital FM.
                 </p>
-                <p className="mt-3 p-4 text-xl text-start leading-relaxed text-gray-400 md:mt-8 font-normal ">
+                <p className="mt-3 p-4 text-xl text-start leading-relaxed text-gray-400 md:mt-8 font-sans ">
                   Known for her authenticity and resilience, she is a powerful
                   female role model in media, inspiring young women to pursue
                   careers in broadcasting. Beyond her work in radio and
@@ -130,7 +130,7 @@ function Team() {
                 <h3 className="text-xl mt-2 font-bold leading-tight text-black sm:text-2xl lg:text-3xl">
                   FOUNDER
                 </h3>
-                <p className="mt-3 p-4 text-xl text-start leading-relaxed text-gray-400 md:mt-8 font-normal ">
+                <p className="mt-3 p-4 text-xl text-start leading-relaxed text-gray-400 md:mt-8 font-sans ">
                   An award-winning Scottish radio presenter and podcaster,
                   widely recognized for his world-class ideas and
                   record-breaking shows on Capital FM, Radio Clyde, and Radio
@@ -138,7 +138,7 @@ function Team() {
                   thinkers, Steven has revolutionized listener engagement,
                   consistently setting new standards in broadcasting.
                 </p>
-                <p className="mt-3 p-4 text-xl text-start leading-relaxed text-gray-400 md:mt-8 font-normal ">
+                <p className="mt-3 p-4 text-xl text-start leading-relaxed text-gray-400 md:mt-8 font-sans ">
                   His innovative approach and dynamic style have attracted
                   collaborations with prestigious brands such as the BBC and
                   M&S, solidifying his influence beyond radio. A true industry
