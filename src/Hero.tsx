@@ -65,7 +65,7 @@ function Hero({
     <section className="relative w-full h-screen flex flex-col items-center justify-center text-center text-white">
       <div className="video-docker absolute top-0 left-0 w-full h-full overflow-hidden after:content-[''] after:absolute after:w-full after:h-full after:top-0 after:left-0 after:bg-black/60 after:z-[1]">
         <video
-          className="min-w-full min-h-full absolute object-cover top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+          className="autoplay loop muted controls webkit-playsinline playsinline min-w-full min-h-full absolute object-cover top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
           src={isUK ? edinburghVideo : video}
           autoPlay
           muted
