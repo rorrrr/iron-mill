@@ -42,7 +42,8 @@ function ContactUs({ isUK }: { isUK: boolean }) {
                 <h2 className="mt-4 text-lg font-medium text-gray-400">
                   Email enquiries
                 </h2>
-                <p
+                <a
+                  href="mailto:info@ironmillmedia.co.uk"
                   className={`mt-2 ${
                     isUK
                       ? "text-custom-blue"
@@ -50,7 +51,7 @@ function ContactUs({ isUK }: { isUK: boolean }) {
                   }`}
                 >
                   info@ironmillmedia.co.uk
-                </p>
+                </a>
               </div>
             </div>
           </div>
