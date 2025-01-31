@@ -14,7 +14,7 @@ function Inlet({
           <img
             src={image}
             alt="Contact Us"
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover md:object-center object-[75%_center]"
           />
         </section>
       </div>

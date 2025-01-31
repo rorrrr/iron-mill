@@ -6,6 +6,7 @@ import highresamy from "./assets/highresamy.png";
 import stevehighres from "./assets/stevenhighres.png";
 import skyline from "./assets/skyline.webp";
 import { Link } from "react-router-dom";
+import textureblack from "./assets/textureblack.jpg";
 
 function Hero({
   isUK,
@@ -69,6 +70,7 @@ function Hero({
           autoPlay
           muted
           loop
+          poster={textureblack}
         />
       </div>
 
