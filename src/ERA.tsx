@@ -4,15 +4,20 @@ import Inlet from "./Inlet";
 import Logos from "./Logos";
 import Mission from "./Mission";
 import downtown from "./assets/skyline.webp";
+import edinburgh from "./assets/edin-wide.jpg";
 import image2 from "./assets/2.jpeg";
 import image7 from "./assets/10.jpeg";
-import image22 from "./assets/22.jpeg";
+import image22 from "./assets/13.jpeg";
 
-function Era() {
+function Era({ isUK }: { isUK: boolean }) {
   return (
     <>
-      <Inlet firstLine="OUR" secondLine="MISSION" image={downtown} />
-      <Mission />
+      <Inlet
+        firstLine="OUR"
+        secondLine="MISSION"
+        image={!isUK ? downtown : edinburgh}
+      />
+      <Mission isUK={isUK} />
       <div
         className={`max-w-[1024px] relative mx-auto bg-gray-50 pb-20 select-none`}
       >

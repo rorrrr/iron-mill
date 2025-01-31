@@ -1,17 +1,28 @@
 import downtown from "./assets/skyline.webp";
+import edinburgh from "./assets/edin-wide.jpg";
 import Inlet from "./Inlet";
 
-function ContactUs() {
+function ContactUs({ isUK }: { isUK: boolean }) {
   return (
     <>
-      <Inlet firstLine="CONTACT" secondLine="US" image={downtown} />
+      <Inlet
+        firstLine="CONTACT"
+        secondLine="US"
+        image={!isUK ? downtown : edinburgh}
+      />
 
       <section className="relative w-full flex flex-col items-center justify-center text-center text-white">
         <section className="bg-white dark:bg-gray-900">
           <div className="container p-6 mx-auto">
             <div className="grid sm:gap-12 mt-10 grid-cols-1 md:grid-cols-1 gap-10">
               <div className="flex flex-col items-center justify-center text-center">
-                <span className="p-3 text-green-800 rounded-full bg-green-100/80 dark:bg-gray-800">
+                <span
+                  className={`p-3 ${
+                    isUK ? "text-custom-blue" : "text-green-800"
+                  } rounded-full ${
+                    isUK ? "bg-custom-blue/20" : "bg-green-100/80"
+                  } dark:bg-gray-800`}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -31,7 +42,13 @@ function ContactUs() {
                 <h2 className="mt-4 text-lg font-medium text-gray-400">
                   Email enquiries
                 </h2>
-                <p className="mt-2 text-green-800 dark:text-green-400">
+                <p
+                  className={`mt-2 ${
+                    isUK
+                      ? "text-custom-blue"
+                      : "text-green-800 dark:text-green-400"
+                  }`}
+                >
                   info@ironmillmedia.co.uk
                 </p>
               </div>

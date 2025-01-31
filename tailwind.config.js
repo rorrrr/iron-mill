@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         "custom-gray": "#E0E1DD",
         "saudi-green": "#165d31",
+        "custom-blue": "#005EB8",
       },
 
       keyframes: {

@@ -1,12 +1,18 @@
 import video from "./assets/dubai-skyline.mp4";
+import edinburghVideo from "./assets/edinburgh-castle.mp4";
 import ironMillLogo from "./assets/logo2.png";
-import thumb from "./assets/thumb.jpg";
 import { useEffect, useState } from "react";
 import highresamy from "./assets/highresamy.png";
 import stevehighres from "./assets/stevenhighres.png";
 import skyline from "./assets/skyline.webp";
 
-function Hero() {
+function Hero({
+  isUK,
+  isFinishedLoading,
+}: {
+  isUK: boolean;
+  isFinishedLoading: boolean;
+}) {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
@@ -31,8 +37,9 @@ function Hero() {
     });
   }, []);
 
-  const fadeInStyle =
-    "animate-slideindownfast text-white mt-1 opacity-0 pt-2 px-4 border-t-4 border-saudi-green w-fit mx-auto";
+  const fadeInStyle = `animate-slideindownfast text-white mt-1 opacity-0 pt-2 px-4 border-t-4 ${
+    isUK ? "border-custom-blue" : "border-saudi-green"
+  } w-fit mx-auto`;
 
   const media = <p className={fadeInStyle}>MEDIA</p>;
 
@@ -44,16 +51,23 @@ function Hero() {
 
   const podcasts = <p className={fadeInStyle}>PODCASTS</p>;
 
+  if (!isFinishedLoading) {
+    return (
+      <div className="h-screen w-full flex items-center justify-center">
+        <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-white"></div>
+      </div>
+    );
+  }
+
   return (
     <section className="relative w-full h-screen flex flex-col items-center justify-center text-center text-white">
       <div className="video-docker absolute top-0 left-0 w-full h-full overflow-hidden after:content-[''] after:absolute after:w-full after:h-full after:top-0 after:left-0 after:bg-black/60 after:z-[1]">
         <video
           className="min-w-full min-h-full absolute object-cover top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-          src={video}
+          src={isUK ? edinburghVideo : video}
           autoPlay
           muted
           loop
-          poster={thumb}
         />
       </div>
 

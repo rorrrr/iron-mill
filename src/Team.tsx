@@ -2,14 +2,21 @@ import highResAmy from "./assets/highresamy.png";
 import highResSteven from "./assets/stevenhighres.png";
 import blobShape from "./assets/greenblob.svg";
 import blobShape1 from "./assets/greenblob1.svg";
+import blobUK from "./assets/blob.svg";
+import blobUK1 from "./assets/blob1.svg";
 import Logos from "./Logos";
 import Inlet from "./Inlet";
 import downtown from "./assets/skyline.webp";
+import edinburgh from "./assets/edin-wide.jpg";
 
-function Team() {
+function Team({ isUK }: { isUK: boolean }) {
   return (
     <div className="relative mx-auto rounded-t-3xl">
-      <Inlet firstLine="OUR" secondLine="TEAM" image={downtown} />
+      <Inlet
+        firstLine="OUR"
+        secondLine="TEAM"
+        image={!isUK ? downtown : edinburgh}
+      />
       <div className="h-100 max-w-[1024px] mx-auto">
         <section className="overflow-hidden mb-0.5 mt-6">
           <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
@@ -40,24 +47,10 @@ function Team() {
                   <br />
                 </p>
                 <div className="space-x-4 mt-4 pb-8">
-                  <button
-                    type="button"
-                    className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-green-600"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14px"
-                      fill="#fff"
-                      viewBox="0 0 155.139 155.139"
-                    >
-                      <path
-                        d="M89.584 155.139V84.378h23.742l3.562-27.585H89.584V39.184c0-7.984 2.208-13.425 13.67-13.425l14.595-.006V1.08C115.325.752 106.661 0 96.577 0 75.52 0 61.104 12.853 61.104 36.452v20.341H37.29v27.585h23.814v70.761h28.48z"
-                        data-original="#010002"
-                      />
-                    </svg>
-                  </button>
-                  <button
-                    type="button"
+                  <a
+                    href="https://x.com/AmyJIrons"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-[#03a9f4] hover:bg-[#03a1f4] active:bg-[#03a9f4]"
                   >
                     <svg
@@ -71,9 +64,11 @@ function Team() {
                         data-original="#03a9f4"
                       />
                     </svg>
-                  </button>
-                  <button
-                    type="button"
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/amy-irons-94214119/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-[#0077b5] hover:bg-[#0055b5] active:bg-[#0077b5]"
                   >
                     <svg
@@ -87,14 +82,14 @@ function Team() {
                         data-original="#0077b5"
                       />
                     </svg>
-                  </button>
+                  </a>
                 </div>
               </div>
 
               <div className="relative pt-5">
                 <img
                   className="absolute inset-x-0 bottom-0 -mb-30"
-                  src={blobShape}
+                  src={!isUK ? blobShape : blobUK}
                   alt=""
                 />
 
@@ -113,7 +108,7 @@ function Team() {
               <div className="relative pt-5 hidden md:block">
                 <img
                   className="absolute inset-x-0 bottom-15"
-                  src={blobShape1}
+                  src={!isUK ? blobShape1 : blobUK1}
                   alt=""
                 />
 
@@ -147,24 +142,10 @@ function Team() {
                   <br />
                 </p>
                 <div className="space-x-4 mt-4 pb-8">
-                  <button
-                    type="button"
-                    className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-blue-600"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14px"
-                      fill="#fff"
-                      viewBox="0 0 155.139 155.139"
-                    >
-                      <path
-                        d="M89.584 155.139V84.378h23.742l3.562-27.585H89.584V39.184c0-7.984 2.208-13.425 13.67-13.425l14.595-.006V1.08C115.325.752 106.661 0 96.577 0 75.52 0 61.104 12.853 61.104 36.452v20.341H37.29v27.585h23.814v70.761h28.48z"
-                        data-original="#010002"
-                      />
-                    </svg>
-                  </button>
-                  <button
-                    type="button"
+                  <a
+                    href="https://x.com/stevenmill"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-[#03a9f4] hover:bg-[#03a1f4] active:bg-[#03a9f4]"
                   >
                     <svg
@@ -178,9 +159,11 @@ function Team() {
                         data-original="#03a9f4"
                       />
                     </svg>
-                  </button>
-                  <button
-                    type="button"
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/steven-mill-92596a96"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-7 h-7 inline-flex items-center justify-center rounded-full border-none outline-none bg-[#0077b5] hover:bg-[#0055b5] active:bg-[#0077b5]"
                   >
                     <svg
@@ -194,13 +177,13 @@ function Team() {
                         data-original="#0077b5"
                       />
                     </svg>
-                  </button>
+                  </a>
                 </div>
               </div>
               <div className="relative pt-5 block md:hidden">
                 <img
                   className="absolute inset-x-0 bottom-15"
-                  src={blobShape1}
+                  src={!isUK ? blobShape1 : blobUK1}
                   alt=""
                 />
 

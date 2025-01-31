@@ -1,7 +1,7 @@
 import amy from "./assets/amy-alternative.jpeg";
 import steven from "./assets/steven-about-us.png";
 
-function Mission() {
+function Mission({ isUK }: { isUK: boolean }) {
   return (
     <section className="mx-auto max-w-[1024px] relative py-4 bg-custom-grey text-white">
       <div className="w-full px-5 mx-auto pb-5">
@@ -28,21 +28,47 @@ function Mission() {
                 <h2 className="text-3xl font-bold lg:text-start text-center text-black">
                   FORGING GREAT CONTENT
                 </h2>
-                <p className=" text-lg font-normal  text-start  text-gray-400 font-sans">
-                  Ironmill Sports & Entertainment Media exists to redefine
-                  storytelling across sports and entertainment. With the Middle
-                  East as our base, our mission is to be a world-leading media
-                  powerhouse, bridging cultures through captivating and
-                  authentic content.
-                </p>
 
-                <p className=" text-lg font-normal  text-start  text-gray-400 font-sans">
-                  Guided by our ERA principles — <strong>Entertaining</strong>,{" "}
-                  <strong>Real</strong>, <strong>Accessible</strong> — we’re
-                  crafting a new era in broadcasting that reaches audiences
-                  worldwide through TV shows, documentaries, live broadcasts,
-                  podcasts, and radio.
-                </p>
+                {!isUK ? (
+                  <>
+                    <p className=" text-lg font-normal  text-start  text-gray-400 font-sans">
+                      Ironmill Sports & Entertainment Media exists to redefine
+                      storytelling across sports and entertainment. With the
+                      Middle East as our base, our mission is to be a
+                      world-leading media powerhouse, bridging cultures through
+                      captivating and authentic content.
+                    </p>
+
+                    <p className=" text-lg font-normal  text-start  text-gray-400 font-sans">
+                      Guided by our ERA principles —{" "}
+                      <strong>Entertaining</strong>, <strong>Real</strong>,{" "}
+                      <strong>Accessible</strong> — we’re crafting a new era in
+                      broadcasting that reaches audiences worldwide through TV
+                      shows, documentaries, live broadcasts, podcasts, and
+                      radio.
+                    </p>
+                  </>
+                ) : (
+                  <>
+                    <p className=" text-lg font-normal  text-start  text-gray-400 font-sans">
+                      Ironmill Sports & Entertainment Media is dedicated to
+                      transforming storytelling in sports and entertainment.
+                      With a strong presence in the UK, rooted in Scotland, our
+                      mission is to become a world-leading media powerhouse,
+                      connecting cultures through compelling and authentic
+                      content.
+                    </p>
+
+                    <p className=" text-lg font-normal  text-start  text-gray-400 font-sans">
+                      Driven by our ERA principles —{" "}
+                      <strong>Entertaining</strong>, <strong>Real</strong>,{" "}
+                      <strong>Accessible</strong> — we are shaping a new era in
+                      broadcasting. From TV shows and documentaries to live
+                      broadcasts, podcasts, and radio, we create content that
+                      resonates with audiences across the UK and beyond.
+                    </p>
+                  </>
+                )}
               </div>
             </div>
           </div>
