@@ -74,6 +74,30 @@ function Hero() {
           {showRadio && radio}
           {showPodcasts && podcasts}
         </h1>
+
+        <div className="mt-16">
+          <div className="w-16 h-16 mx-auto">
+            <a
+              href="/who-we-are"
+              className="animate-slidein opacity-0 [--slidein-delay:2000ms] rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-300 cursor-pointer w-full h-full flex items-center justify-center text-white hover:text-white no-underline"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M14 5l7 7-7 7M3 12h18"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );

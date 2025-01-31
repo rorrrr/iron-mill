@@ -19,7 +19,7 @@ function Team() {
                   AMY IRONS
                 </h2>
                 <h3 className="text-xl mt-2 font-bold leading-tight text-black sm:text-2xl lg:text-3xl">
-                  FOUNDER
+                  CO-FOUNDER
                 </h3>
                 <p className="mt-3 p-4 text-xl text-start leading-relaxed text-gray-400 md:mt-8 font-sans">
                   An award-winning Scottish TV and radio host and podcaster,
@@ -128,7 +128,7 @@ function Team() {
                   STEVEN MILL
                 </h2>
                 <h3 className="text-xl mt-2 font-bold leading-tight text-black sm:text-2xl lg:text-3xl">
-                  FOUNDER
+                  CO-FOUNDER
                 </h3>
                 <p className="mt-3 p-4 text-xl text-start leading-relaxed text-gray-400 md:mt-8 font-sans ">
                   An award-winning Scottish radio presenter and podcaster,
