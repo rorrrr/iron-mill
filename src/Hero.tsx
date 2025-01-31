@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import highresamy from "./assets/highresamy.png";
 import stevehighres from "./assets/stevenhighres.png";
 import skyline from "./assets/skyline.webp";
+import { Link } from "react-router-dom";
 
 function Hero({
   isUK,
@@ -91,8 +92,8 @@ function Hero({
 
         <div className="mt-16">
           <div className="w-16 h-16 mx-auto">
-            <a
-              href="/who-we-are"
+            <Link
+              to="/who-we-are"
               className="animate-slidein opacity-0 [--slidein-delay:2000ms] rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-300 cursor-pointer w-full h-full flex items-center justify-center text-white hover:text-white no-underline"
             >
               <svg
@@ -109,7 +110,7 @@ function Hero({
                   d="M14 5l7 7-7 7M3 12h18"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

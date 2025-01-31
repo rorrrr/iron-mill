@@ -32,12 +32,13 @@ function Nav({ isUK }: { isUK: boolean }) {
           {/* Left side - Logo */}
           <div>
             {pathname !== "/" && (
-              <img
-                src={ironMillLogoWhite}
-                alt="logo"
-                className="w-auto ml-4 h-[40px] pt-1 transition-transform duration-200 hover:scale-110 cursor-pointer"
-                onClick={() => (window.location.href = "/")}
-              />
+              <Link to="/">
+                <img
+                  src={ironMillLogoWhite}
+                  alt="logo"
+                  className="w-auto ml-4 h-[40px] pt-1 transition-transform duration-200 hover:scale-110 cursor-pointer"
+                />
+              </Link>
             )}
           </div>
 

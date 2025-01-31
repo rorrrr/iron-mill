@@ -80,7 +80,7 @@ function LanguageSelector({
 
   if (location.pathname !== "/") return null;
 
-  const getFlag = (isUK: boolean) => (isUK ? "🇬🇧" : "🌐");
+  const getFlag = (isUK: boolean) => (isUK ? "🇬🇧" : "🌎");
 
   if (!isFinishedLoading) {
     return (
@@ -94,7 +94,7 @@ function LanguageSelector({
     <div className="fixed bottom-5 left-5 z-50 mb-4">
       <div className="relative">
         <button
-          className="h-7 flex items-center justify-center text-2xl outline-none focus:outline-none pointer-events-auto cursor-default"
+          className="h-7 flex items-center justify-center text-2xl outline-none focus:outline-none pointer-events-auto cursor-default opacity-80 hover:opacity-100 transition-opacity"
           aria-label="Select location"
           onClick={() => setIsOpen(!isOpen)}
         >
