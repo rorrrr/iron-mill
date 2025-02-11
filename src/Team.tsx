@@ -29,21 +29,22 @@ function Team({ isUK }: { isUK: boolean }) {
                   CO-FOUNDER
                 </h3>
                 <p className="mt-3 p-4 text-xl text-start leading-relaxed text-gray-400 md:mt-8 font-sans">
-                  An award-winning Scottish TV and radio host and podcaster,
-                  celebrated for her impactful career and dynamic presence in
-                  live TV and event coverage. With her exceptional storytelling
-                  and professionalism, Amy has become a leading voice across top
-                  platforms, including the BBC and Capital FM.
+                  Amy is an award-winning Scottish TV and radio host, podcaster,
+                  and all-round broadcasting powerhouse. With a gift for live TV
+                  and event coverage, she’s built an impressive career, known
+                  for her engaging presence and top-tier storytelling on major
+                  platforms like the BBC, Capital FM and Sky Sports. This
+                  culminated recently when she anchored coverage of BBC
+                  Scotland's New Year's Eve coverage 2025.
                 </p>
                 <p className="mt-3 p-4 text-xl text-start leading-relaxed text-gray-400 md:mt-8 font-sans ">
-                  Known for her authenticity and resilience, she is a powerful
-                  female role model in media, inspiring young women to pursue
-                  careers in broadcasting. Beyond her work in radio and
-                  television, Amy collaborates with world-renowned organizations
-                  like The Prince's Trust, where her commitment to empowerment
-                  and positive change shines. Her achievements continue to set
-                  new standards in the industry, making her one of Scotland's
-                  most influential media figures.
+                  Authentic, resilient, and a true role model, Amy is inspiring
+                  the next generation of women to break into the media industry.
+                  But her impact goes beyond broadcasting—she works with
+                  world-renowned organisations like The Prince’s Trust,
+                  championing empowerment and positive change. A trailblazer in
+                  her field, she continues to set new standards, cementing her
+                  place as one of Scotland’s most influential media figures.
                   <br />
                 </p>
                 <div className="space-x-4 mt-4 pb-8">
@@ -126,19 +127,20 @@ function Team({ isUK }: { isUK: boolean }) {
                   CO-FOUNDER
                 </h3>
                 <p className="mt-3 p-4 text-xl text-start leading-relaxed text-gray-400 md:mt-8 font-sans ">
-                  An award-winning Scottish radio presenter and podcaster,
-                  widely recognized for his world-class ideas and
-                  record-breaking shows on Capital FM, Radio Clyde, and Radio
-                  Forth. Known as one of the industry's top on-air strategic
-                  thinkers, Steven has revolutionized listener engagement,
-                  consistently setting new standards in broadcasting.
+                  Steven Mill is an award-winning Scottish radio presenter and
+                  podcaster, best known for his groundbreaking ideas and
+                  record-smashing shows on Capital FM, Radio Clyde, and Radio
+                  Forth. He’s one of the sharpest minds in the business when it
+                  comes to on-air strategy, constantly pushing the boundaries of
+                  listener engagement and setting new benchmarks in
+                  broadcasting.
                 </p>
                 <p className="mt-3 p-4 text-xl text-start leading-relaxed text-gray-400 md:mt-8 font-sans ">
-                  His innovative approach and dynamic style have attracted
-                  collaborations with prestigious brands such as the BBC and
-                  M&S, solidifying his influence beyond radio. A true industry
-                  leader, Steven Mill continues to inspire both audiences and
-                  peers, redefining excellence in radio and podcasting.
+                  His fresh, dynamic approach has led to collaborations with top
+                  brands like the BBC, RBS, and M&S, proving his influence goes
+                  far beyond radio. A true leader in the industry, Steven
+                  continues to inspire both audiences and fellow broadcasters,
+                  redefining what’s possible in radio and podcasting.
                   <br />
                 </p>
                 <div className="space-x-4 mt-4 pb-8">

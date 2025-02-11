@@ -32,11 +32,12 @@ function Mission({ isUK }: { isUK: boolean }) {
                 {!isUK ? (
                   <>
                     <p className=" text-lg font-normal  text-start  text-gray-400 font-sans">
-                      Ironmill Sports & Entertainment Media exists to redefine
-                      storytelling across sports and entertainment. With the
-                      Middle East as our base, our mission is to be a
-                      world-leading media powerhouse, bridging cultures through
-                      captivating and authentic content.
+                      At Ironmill Sports & Entertainment Media, we’re all about
+                      transforming the way stories are told in sport and
+                      entertainment. With the Middle East as our base, our
+                      mission is to become a world-leading media powerhouse,
+                      bringing people together through authentic and compelling
+                      content.
                     </p>
 
                     <p className=" text-lg font-normal  text-start  text-gray-400 font-sans">
@@ -51,21 +52,21 @@ function Mission({ isUK }: { isUK: boolean }) {
                 ) : (
                   <>
                     <p className=" text-lg font-normal  text-start  text-gray-400 font-sans">
-                      Ironmill Sports & Entertainment Media is dedicated to
-                      transforming storytelling in sports and entertainment.
-                      With a strong presence in the UK, rooted in Scotland, our
-                      mission is to become a world-leading media powerhouse,
-                      connecting cultures through compelling and authentic
-                      content.
+                      At Ironmill Sports & Entertainment Media, we’re all about
+                      transforming the way stories are told in sport and
+                      entertainment. Based in Scotland with a strong UK
+                      presence, our mission is to become a world-leading media
+                      powerhouse, bringing people together through authentic and
+                      compelling content.
                     </p>
 
                     <p className=" text-lg font-normal  text-start  text-gray-400 font-sans">
-                      Driven by our ERA principles —{" "}
+                      Guided by our ERA principles —{" "}
                       <strong>Entertaining</strong>, <strong>Real</strong>,{" "}
-                      <strong>Accessible</strong> — we are shaping a new era in
-                      broadcasting. From TV shows and documentaries to live
-                      broadcasts, podcasts, and radio, we create content that
-                      resonates with audiences across the UK and beyond.
+                      <strong>Accessible</strong> — we’re shaping a new era in
+                      broadcasting. Whether it’s TV shows, documentaries, live
+                      broadcasts, podcasts, or radio, we create content that
+                      truly connects with audiences across the UK and beyond.
                     </p>
                   </>
                 )}

@@ -5,7 +5,7 @@ function Card({
   align = "top",
 }: {
   title: string;
-  blurb: string;
+  blurb: React.ReactNode;
   image: string;
   align: string;
 }) {
@@ -25,7 +25,7 @@ function Card({
       />
       <div className="px-6 py-4">
         <div className="font-bold text-gray-800 text-2xl mb-2">{title}</div>
-        <p className="text-gray-400 font-sans">{blurb}</p>
+        <div className="text-gray-400 font-sans">{blurb}</div>
       </div>
     </div>
   );
